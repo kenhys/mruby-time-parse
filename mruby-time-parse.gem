@@ -1,0 +1,7 @@
+name: mruby-time-parse
+description: Time class
+author: Kentaro Hayashi
+website: https://github.com/kenhys/mruby-time-parse
+protocol: git
+repository: https://github.com/kenhys/mruby-time-parse.git
+license: MIT
