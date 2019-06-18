@@ -32,3 +32,8 @@ assert("Time#parse YYYY-MM-DD HH:MM:SS -HHMM") do
   assert_equal(Time.new(1996, 12, 19, 16, 39, 57, -8 * 60 * 60), time)
 end
 
+assert("Time#parse YYYY-MM-DD HH:MM:SS +HHMM") do
+  time = Time.parse("1970-01-01 09:00:00 +0900")
+  assert_equal(Time.new(1970, 1, 1, 9, 0, 0, 9 * 60 * 60), time)
+end
+

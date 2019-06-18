@@ -27,7 +27,7 @@ class Time
       utc_offset = $7
       if utc_offset =~ /^-(\d{2}):?(\d{2})/
         offset = - $1.to_i * 60 * 60 + $2.to_i * 60
-      elsif utc_offset =~ /^+(\d{2}):?(\d{2})/
+      elsif utc_offset =~ /^\+(\d{2}):?(\d{2})/
         offset = $1.to_i * 60 * 60 + $2.to_i * 60
       end
       Time.new(year, month, day, hour, min, sec, offset)
